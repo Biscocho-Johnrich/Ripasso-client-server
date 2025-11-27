@@ -2,7 +2,24 @@ console.log("Buongiorno, il server si sta avviando....");
 
 const express = require("express");
 const app = express();
-cost porta = 3000;
+const porta = 3000;
+
+
+const studenti = {
+     1: "Amantea",
+     2: "Biscocho",
+     3: "De Santis",
+     4: "Eltanaihj"
+}
+
+const RTX4090 = {
+    core: 16384
+    Boostclock: 
+
+
+}
+
+
 
 
 //configurazione del server
@@ -14,5 +31,11 @@ app.get("/",(richiesta,risposta)=>{
 app.get("/utenti",(richiesta,risposta)=>{
     risposta.send("Ciao bellu...., sei su https//localhost:/" + porta + "/utenti");
 })
+app.get("/studenti",(richiesta,risposta)=>{
+    risposta.send(studenti); 
+})
+app.get("/studenti de Santis",(richiesta,risposta)=>{
+    risposta.send(De Santis[richiesta,risposta]=>{
 
+    }; 
 app.listen (porta,()=> console.log("Server avviato in ascolto su porta " + porta));
