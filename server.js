@@ -5,15 +5,10 @@ const app = express();
 const porta = 3000;
 
 
-
-
-
-
-
 //oggetto javascript
 
 
-const STEELSERIES  Diablo = {
+const STEELSERIESDiablo = {
     EAN : "EAN0813810014507",
     Puntamento: "Ottico",
     Connessione: "USB",
@@ -21,10 +16,20 @@ const STEELSERIES  Diablo = {
     Risoluzione: "100 - 5.700 CPI/DPI"
 }
 
+console.log(STEELSERIESDiablo.Serie);
 
-console.log(STEELSERIES Diablo.Serie);
+const votiStudenti = {
+    Amantea: 7,
+    Biscocho: 6,
+    DeSantis: 10,
+    Eltanaihy: 4.9,
+    Fedorenko: 6,
+    Natalino:4,
+    Finini: 6,
+    Zingariello: 4.000009
+}
 
-
+console.log(votiStudenti.Finini);
 
 
 
@@ -34,15 +39,14 @@ const studenti = {
      1: "Amantea",
      2: "Biscocho",
      3: "De Santis",
-     4: "Eltanaihj"
+     4: "Eltanaihy"
 }
 
 const RTX4090 = {
-    core: 16384
-    Boostclock: 
+    core: 16384,
+    Boostclock: 777,
     memoria: 24,
-    tipoMemoria:GDDR6X
-
+    tipoMemoria:"GDDR6X"
 
 }
 
@@ -61,8 +65,8 @@ app.get("/utenti",(richiesta,risposta)=>{
 app.get("/studenti",(richiesta,risposta)=>{
     risposta.send(studenti); 
 })
-app.get("/studenti de Santis",(richiesta,risposta)=>{
-    risposta.send(De Santis[richiesta,risposta]=>{
+// app.get("/studenti de Santis",(richiesta,risposta)=>{
+//     risposta.send(DeSantis[richiesta,risposta]=>{
 
-    }; 
+//     }; 
 app.listen (porta,()=> console.log("Server avviato in ascolto su porta " + porta));
